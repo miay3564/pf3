@@ -1,0 +1,129 @@
+/* -------------태블릿---------------- */
+@media screen and (max-width:1200px){
+    /*  공통  */
+      .wrap{
+        /*! padding: 30px 20px !important; */
+      }
+      .h3T {
+        font-size: calc(48px * 0.7);
+      }
+      .h4T {
+        font-size: calc(36px * 0.7);
+      }
+      .h5T {
+        font-size: calc(24px * 0.7);
+      }
+      .h6T {
+        font-size: calc(16px * 0.9) !important;
+      }
+      
+}/* -----------   1200 end  ---------- */
+    
+/* -------------모바일---------------- */
+@media screen and (max-width:768px){
+    /* common   */
+      .h1T {
+        font-size:calc(84px * 0.6);
+      }
+      .h3T {
+        font-size:calc(48px * 0.6);
+      }
+      .h4T {
+        font-size: calc(36px * 0.55);
+      }
+      .h6T {
+        font-size: calc(16px * 0.8);
+      }
+      .h100{
+        
+      }
+    /*  상단영역  */
+      header .notice{
+        display: none;
+      }
+      header nav{
+        padding: 0 16px;
+        height: 80px;
+      }
+      header nav > ul.gnb{
+        display: none;
+      }
+      header nav h1 a{
+        width: 250px;
+        height: 30px;
+      }
+      header nav > ul.member{
+        display: none;
+      }
+      .ham{
+        display: flex;
+        width: 20px;
+        height: 17px;
+        margin-right: 10px;
+        color: white;
+      }
+      /*  footer  */
+      footer{
+        border-radius: 0;
+        background-color: #434250;
+      }
+      footer .top{
+        height: 250px;
+        padding-top: 0;
+        margin-top: 80px;
+      }
+      footer .top h2{
+        width: calc(178px * 0.7);
+        height: calc(75px * 0.7);
+      }
+      footer .top p{
+        font-size: calc(48px * 0.3);
+        position: relative;
+        width: 54%;
+      }
+      footer .top ul{
+        width: 100%;
+        height: 65%;
+      }
+      footer .top ul li{
+        font-size: 14px;
+      }
+      footer .top ul li:nth-child(1){
+        top: 20px;
+        left: 55px;
+      }
+      footer .top ul li::before{
+        width: 5px;
+        height: 5px;
+        bottom: calc(15px - 2.5px);
+        left: calc(15px - 2.5px);
+      }
+      footer .top ul li::after{
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+      }
+      footer .top ul li:nth-child(2){
+        right: 110px;
+        bottom: 50px;
+      }
+      footer .wrap ul.fnb{
+        transform: initial;
+      }
+      footer .wrap ul.fnb li a{
+        padding: 7px;
+      }
+      footer .wrap ul.fnb li:first-child a{
+        padding-left: initial;
+      }
+      footer .wrap p.copyright{   
+        font-size: 14px;
+      }
+      footer .wrap{
+        display: block;
+        padding: 0px 12px;
+      }
+      footer .wrap a.map{
+        display: none;
+      }
+}
