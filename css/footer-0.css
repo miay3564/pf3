@@ -1,0 +1,128 @@
+footer {
+ 
+  background-color: #eee;
+  border-top: 1px solid;
+}
+footer .wrap{
+  display: grid;
+  grid-template-columns: auto 2fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  padding-bottom: 60px;
+  width: auto;
+  padding-left: calc((100% - 1440px) / 2);
+  padding-right: calc((100% - 1440px) / 2);
+  align-items: center;
+}
+footer h1 {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer h1 a {
+ 
+}
+footer h2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+footer ul.fnb {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid;
+  position: relative;
+  align-items: center;
+}
+footer ul.fnb::after{
+  content: "";
+  display: block;
+  width: calc(100vw - 17px);
+  border-top: 1px solid #b1b1b1;
+  position: absolute;
+  bottom: -1px;
+  left: calc((100vw - 1440px) / -2);
+  height: 100%;
+  background-color: white;
+  border-bottom: 1px solid #b1b1b1;
+}
+footer ul.fnb li {
+ 
+  z-index: 1;
+}
+footer ul.fnb li a {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+footer ul.sns {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: end;
+  z-index: 1;
+  gap: 14px;
+  align-items: center;
+}
+footer ul.sns li {
+ 
+}
+footer ul.sns li a {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  width: 32px;
+  background-image: url(../img/ico_spr.png);
+  background-position: calc(-51px / 1) -13.6px;
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+footer address {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  font-style: normal;
+  align-self: flex-start;
+  line-height: 2;
+}
+footer address span {
+ 
+}
+footer ul.email {
+  grid-column: 3;
+  grid-row: 3 / span 2;
+  justify-self: end;
+}
+footer ul.email li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+}
+footer ul.email li a {
+ 
+  line-height: 2;
+}
+footer p.money {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+  line-height: 2;
+}
+footer ul.award {
+  grid-column: 1 / span 3;
+  grid-row: 5;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+footer ul.award li {
+ 
+}
+footer ul.award li a {
+ 
+}
+footer p.copyright {
+  grid-column: 1 / span 2;
+  grid-row: 6;
+}

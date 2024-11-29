@@ -1,0 +1,106 @@
+div#title{
+  height: 100%;
+  /*! background-image: url(../img/img_visual01.jpg); */
+  /*! background-position: center; */
+  min-height: 700px;
+  position: relative;
+}
+div#title div.wrap{
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+div#title div.wrap::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  display: block;
+  left: calc(50% - 1px);
+  bottom: 0;
+  background-color: white;
+  z-index: 1;
+  transition: 1s;
+}
+div#title div.wrap::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  display: block;
+  left: calc(50% - 4px);
+  bottom: 46px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 50%;
+  animation-name: mdown;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes mdown{
+  0%{
+    bottom: 46px;
+  }
+  70%{
+    bottom: -4px;
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    bottom: -4px;
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+div#title div.wrap ul.titleAni{
+  height: 100%;
+  border-radius: 0 0 200px 0;
+  overflow: hidden;
+}
+div#title div.wrap ul.titleAni li.t{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  min-height: 700px;
+}
+div#title div.wrap ul.titleAni li.t1{
+  background-image: url(../img/bg/img_visual01.jpg);
+}
+div#title div.wrap ul.titleAni li.t2{
+
+  background-image: url(../img/bg/img_visual02.jpg);
+}
+div#title div.wrap ul.titleAni li.t>*{
+  color: white;
+}
+div#title  ul.titleAni li.t h2{
+
+  font-size: 0;
+  width: 480px;
+  height: 230px;
+  background-image: url(../img/main/visual_tx.svg);
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+div#title ul.titleAni li.t p{
+
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 2;
+}
+div#title ul.titleAni li.t a{
+  border: 1px solid;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 17px;
+}

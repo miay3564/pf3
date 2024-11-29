@@ -1,0 +1,56 @@
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.wrap{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.grid{
+  display: grid;
+}
+.flex{
+  display: flex;
+}
+.h100{
+  height: 100%;
+  min-height: 700px;
+}
+.hide{
+  display: none;
+}
+.block{
+  display: block;
+}
+.line{
+  line-height: 1.4;
+}
+.h1T{
+  font-size:84px;
+}
+.h2T{
+  font-size:74px;
+}
+.h3T{
+  font-size:48px;
+}
+.h4T{
+  font-size:36px;
+}
+.h5T{
+  font-size:24px;
+}
+.h6T{
+  font-size:16px;
+}
+.smT{
+  font-size:14px;
+}
+
+
+
+
+
+

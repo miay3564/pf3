@@ -1,0 +1,38 @@
+
+#subtitle{
+
+}
+#introduce #subtitle{
+  background-image: url(../img/img_visual01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  border-radius: 0 0 200px 0;
+}
+#introduce.greeting #subtitle{
+
+}
+#subtitle .wrap{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 30px;
+}
+#subtitle .wrap h2{
+    
+  font-size: 58px;
+}
+#subtitle .wrap p{
+    
+}
+/* 회원가입 */
+#members #subtitle{
+  background-image: url(../img/member/img_visual02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  border-radius: 0 0 200px 0;
+}

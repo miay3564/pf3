@@ -1,0 +1,110 @@
+#greentingin {
+  
+}
+#greentingin .wrap {
+  grid-template-columns: calc((100% - 1440px) / 2) 1fr 1fr calc((100% - 1440px) / 2);
+  grid-template-rows: auto auto auto auto auto auto auto;
+  max-width: 100%;
+  padding-bottom: 100px;
+}
+#greentingin .wrap ul {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  border-radius: 50px 0 50px 0;
+  padding-left: 100px;
+  margin-bottom: 70px;
+  transform: translateY(-66%);
+  background: linear-gradient(45deg, #05875A, #09847F);
+}
+#greentingin .wrap ul li {
+  
+}
+#greentingin .wrap ul li a {
+  height: 100px;
+  line-height: 100px;
+  padding: 0 20px;
+  color:white;
+  position: relative;
+}
+#greentingin .wrap ul li.path a::before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  left: calc(50% - 2px);
+  top: calc(50% - 18px);
+  border-radius: 50%;
+}
+#greentingin .wrap figure:nth-of-type(1) {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  border-radius: 0 0 120px 0;
+  overflow: hidden;
+  margin-right: 60px;
+  margin-bottom: 70px;
+}
+#greentingin .wrap figure:nth-of-type(2) {
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 5;
+  border-radius: 0 0 0 120px;
+  overflow: hidden;
+}
+#greentingin .wrap figure img {
+  width: 100%;
+}
+#greentingin .wrap figure figcaption {
+  
+}
+#greentingin .wrap h3 {
+  line-height: 1.2;
+}
+#greentingin .wrap h3:nth-of-type(1){
+  grid-column: 3;
+  grid-row: 2;
+  align-self: end;
+  transform: translateY(-100PX);
+  line-height: 1.3;
+}
+#greentingin .wrap h3:nth-of-type(2){
+  grid-column: 2;
+  grid-row: 4;
+  margin: 100px 60px 55px 0;
+}
+#greentingin .wrap h3 span {
+  
+}
+#greentingin .wrap h3 strong {
+  
+  color: #099789;
+}
+#greentingin .wrap p {
+  
+}
+#greentingin .wrap p:nth-of-type(1) {
+  grid-column: 3;
+  grid-row: 3;
+  line-height: 1.5;
+  color: #333;
+  transform: translateY(-60PX);
+}
+#greentingin .wrap p:nth-of-type(n+2){
+  
+  margin-right: 60px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #333;
+}
+#greentingin .wrap p:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 5;
+}
+#greentingin .wrap p:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 6;
+}
+#greentingin .wrap p:nth-of-type(4) {
+  grid-column: 2;
+  grid-row: 7;
+}
