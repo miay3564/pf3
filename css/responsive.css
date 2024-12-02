@@ -33,6 +33,9 @@
   #title .slick-next::before{
     width: 15px;
   }
+  #title .mouse-scroll .mouse{
+    border-radius: 10px;
+  }
   /* end */
   div#title ul.titleAni li.t h2{
     width: calc(480px * 0.5);

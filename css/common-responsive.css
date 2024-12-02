@@ -1,21 +1,26 @@
 /* -------------태블릿---------------- */
 @media screen and (max-width:1200px){
     /*  공통  */
-      .wrap{
-        /*! padding: 30px 20px !important; */
-      }
-      .h3T {
-        font-size: calc(48px * 0.7);
-      }
-      .h4T {
-        font-size: calc(36px * 0.7);
-      }
-      .h5T {
-        font-size: calc(24px * 0.7);
-      }
-      .h6T {
-        font-size: calc(16px * 0.9) !important;
-      }
+  .wrap{
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+     /*! padding: 30px 20px !important; */
+   }
+/*   .h2T{
+    font-size: 9.6354166666666
+   } */
+  .h3T {
+    font-size: calc(48px * 0.7);
+   }
+  .h4T {
+    font-size: calc(36px * 0.7);
+   }
+  .h5T {
+     font-size: calc(24px * 0.7);
+   }
+   .h6T {
+     font-size: calc(16px * 0.9) !important;
+   }
       
 }/* -----------   1200 end  ---------- */
     
@@ -38,6 +43,9 @@
         
       }
     /*  상단영역  */
+      header{
+        z-index: 4;
+      }
       header .notice{
         display: none;
       }
@@ -45,22 +53,118 @@
         padding: 0 16px;
         height: 80px;
       }
-      header nav > ul.gnb{
-        display: none;
+      header nav h1{
+        z-index: 2;
       }
       header nav h1 a{
         width: 250px;
         height: 30px;
       }
-      header nav > ul.member{
+/*       header nav > ul.gnb{
         display: none;
       }
+      header nav > ul.member{
+        display: none;
+      } */
       .ham{
         display: flex;
         width: 20px;
         height: 17px;
         margin-right: 10px;
         color: white;
+        z-index: 2;
+      }
+      header nav .mobileMenu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: #434250 url(../img/bg/bg_banner.jpg) center bottom no-repeat;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        gap: 30px;
+        box-sizing: border-box;
+        transform: translateX(+100%);
+        transition: 1s;
+      }
+      .mobileMenuShow{
+        transform: translateX(0%) !important; 
+      }
+      header nav .mobileMenu>ul.member{
+        gap: 10px;
+        width: 90%;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px dashed #ffffff40;
+        border-top: 1px solid #ffffff21;
+      }
+      header nav .mobileMenu>ul.member li{
+        padding: 7px 22px;
+        border: 1px solid #fff;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+      header nav .mobileMenu>ul.member li a{
+        color: white;
+      }
+      header nav .mobileMenu>ul.member li:nth-child(2) a::before{
+        content: "";
+      }
+      header nav .mobileMenu>ul.gnb {
+        width: 100%;
+        text-align: center;
+      }
+      header nav .mobileMenu> ul.gnb::before{
+        content: "";
+      }
+      header nav .mobileMenu> ul.gnb.lineDown::before{
+        
+      }
+      header nav .mobileMenu> ul.gnb:hover::before{
+        
+      }
+      header nav .mobileMenu>ul.gnb>li {
+        
+      }
+      header nav .mobileMenu>ul.gnb>li>h2{
+
+      }
+      header nav .mobileMenu>ul.gnb>li>h2 a {
+        line-height: 2;
+        color: #fff;
+        font-size: 17px;
+        padding: 10px 0;
+        display: block;
+      }
+      header nav .mobileMenu > ul.gnb:hover > li > a{
+        
+      }
+      header nav .mobileMenu>ul.gnb>li>a::after{
+        content:"";
+      }
+      header nav .mobileMenu>ul.gnb>li>a:hover::after{
+         
+      }
+      header nav .mobileMenu>ul.gnb>li ul.sub{
+        display: none;
+      }
+      header nav .mobileMenu>ul.gnb>li ul.sub li{
+
+      }
+      header nav .mobileMenu > ul.gnb > li ul.sub li a:hover{
+        color: #09847F;
+      }
+      header nav .mobileMenu>ul.gnb>li ul.sub li a{
+        line-height: 1.6;
+        padding: 5px 0;
+        display: block;
+        color: #fff;
+        font-size: 14px;
       }
       /*  footer  */
       footer{
@@ -111,13 +215,14 @@
         transform: initial;
       }
       footer .wrap ul.fnb li a{
-        padding: 7px;
+        padding: 6px;
       }
       footer .wrap ul.fnb li:first-child a{
         padding-left: initial;
       }
       footer .wrap p.copyright{   
         font-size: 14px;
+        margin-bottom: 10px;
       }
       footer .wrap{
         display: block;

@@ -132,6 +132,21 @@
     <!-- typing text -->
     <link rel="stylesheet" href="typingtext/style.css">
     <script src="typingtext/script.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //header의 nav에 마크업을 추가하시오. 추가할 곳 / 추가할 것
+            //append : 없는 것을 nav의 제일 마지막에 추가 //prepend : 없는 것을 nav의 제일 앞에 추가
+            $("header nav").append('<div class="mobileMenu"></div>');
+            //.member를 .mobileMenu로 이동시키시오.
+            // appendTo : ""에 있는 걸 ''안으로 이동
+            $("header nav ul.member, header nav ul.gnb").appendTo('.mobileMenu');
+            $(".ham").click(function(){
+                $(".mobileMenu").toggleClass('mobileMenuShow');
+                return false
+            });
+        });
+    </script>
 </head>
 <body>
     <!--  상단영역 -->
