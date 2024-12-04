@@ -1,0 +1,53 @@
+{
+	"folders": [
+		{
+			"name": "pf3",
+			"path": "."
+		},
+		{
+			"name": "자바스크립트-제이쿼리예제",
+			"path": "../../[학습자료]/코딩자료/자바스크립트-제이쿼리예제"
+		},
+		{
+			"name": "improved-responsive-scroll-icon",
+			"path": "../../[다운로드]/codepen/improved-responsive-scroll-icon"
+		},
+		{
+			"name": "particle-network-animation",
+			"path": "../../[다운로드]/codepen/particle-network-animation"
+		},
+		{
+			"name": "pf2",
+			"path": "../pf2"
+		},
+		{
+			"name": "pf1",
+			"path": "../pf1"
+		},
+		{
+			"name": "-personal1",
+			"path": "../-personal1"
+		},
+		{
+			"name": "myPF1",
+			"path": "../myPF1"
+		},
+		{
+			"name": "mypf2",
+			"path": "../mypf2"
+		},
+		{
+			"name": "myPF3",
+			"path": "../myPF3"
+		},
+		{
+			"name": "personal2-main",
+			"path": "../personal2-main"
+		},
+		{
+			"name": "-자바스크립트-제이쿼리 예제",
+			"path": "../../[코딩자료]/-자바스크립트-제이쿼리 예제"
+		}
+	],
+	"settings": {}
+}

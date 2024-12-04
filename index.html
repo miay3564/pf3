@@ -103,6 +103,7 @@
 
         });
     </script>
+    <!-- pc 메뉴 서브애니 -->
     <script>
         $(document).ready(function(){
             $("header nav > ul.gnb > li ul").hide(); //hide() 감춰라
@@ -133,10 +134,13 @@
     <link rel="stylesheet" href="typingtext/style.css">
     <script src="typingtext/script.js"></script>
 
+    <!-- 모바일 메뉴 서브처리 -->
     <script>
         $(document).ready(function(){
             if($(window).width()<769){
                 //header의 nav에 마크업을 추가하시오. 추가할 곳 / 추가할 것
+                //모바일에서 대메뉴에 있는 이벤트 없애기
+                $("header nav > ul.gnb > li").off("mouseenter mouseleave");
                 //append : 없는 것을 nav의 제일 마지막에 추가 //prepend : 없는 것을 nav의 제일 앞에 추가
                 $("header nav").append('<div class="mobileMenu"></div>');
                 //.member를 .mobileMenu로 이동시키시오.
@@ -145,9 +149,57 @@
                 //.ham 클릭시 실행.
                 $(".ham").click(function(){
                     $(".mobileMenu").toggleClass('mobileMenuShow');
-                    return false
+                    return false;
+                });
+                //모바일대메뉴 클릭시 서브메뉴 슬라이드다운
+                $("header nav .mobileMenu > ul.gnb > li > h2 a").click(function(){
+                    $(this).parent().next(".sub").slideToggle();
+                    $(this).parent().parent().siblings().children(".sub").slideUp();
+                    return false;
+
                 });
             }
+            // $(window).resize(function(){
+            //     //모바일 서브메뉴 추가 
+            //     //remove : 모바일 메뉴 삭제 
+            //     $(".mobileMenu").remove(); 
+            //     //append : 없는 것을 nav의 제일 마지막에 추가
+            //     $("header nav").append('<div class="mobileMenu"></div>');
+            //     //.member를 .mobileMenu로 이동시키시오.
+            //     $("header nav ul.member, header nav ul.gnb").appendTo('.mobileMenu');
+            //     //.ham 클릭시 실행.
+            //     $(".ham").click(function(){
+            //         $(".mobileMenu").toggleClass('mobileMenuShow');
+            //         return false
+            //     });
+            // });
+
+            $(window).resize(function(){
+                console.log("Resize detected");
+                if ($(window).width() <= 768) {
+                    console.log("Switching to mobile view");
+                    if (!$(".mobileMenu").length) {
+                        console.log("Adding .mobileMenu");
+                        $("header nav").append('<div class="mobileMenu"></div>');
+                    }
+                    $("header nav ul.member, header nav ul.gnb").appendTo(".mobileMenu");
+
+                    $(".ham").off("click");
+                    $(".ham").on("click",function(){
+                        $(".mobileMenu").toggleClass('mobileMenuShow');
+                        return false;
+                    });
+                
+                    console.log("Moved ul.member and ul.gnb to .mobileMenu");
+                } else {
+                    console.log("Switching to desktop view");
+                    if ($(".mobileMenu").length) {
+                        $("header nav ul.member, header nav ul.gnb").appendTo("header nav");
+                        $(".mobileMenu").remove();
+                        console.log(".mobileMenu removed");
+                    }
+                }
+            });
         });
     </script>
 </head>
